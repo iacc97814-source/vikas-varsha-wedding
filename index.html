@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#e8e5d5">
+<title>Vikas & Varsha | Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+:root{--sage:#66765d;--sage-dark:#344536;--cream:#f5f0e3;--gold:#b99a5b;--ink:#344033}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#d9d9d0;color:var(--ink);font-family:Montserrat,Arial,sans-serif}
+button{font:inherit;cursor:pointer}.site{max-width:520px;margin:auto;background:var(--cream);min-height:100vh;overflow:hidden;box-shadow:0 0 35px #25301c22}
+.hero{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:36px 25px;background:radial-gradient(ellipse at top,#fffdf3 0,#e9e8d8 62%,#d4ddca 100%);isolation:isolate}
+.hero:before,.hero:after{content:"";position:absolute;inset:15px;border:1px solid var(--gold);border-radius:48% 48% 8px 8px;pointer-events:none;z-index:-1}
+.hero:after{inset:23px;border-color:#b99a5b66;border-radius:47% 47% 5px 5px}
+.corner{position:absolute;color:var(--sage);font-size:45px;opacity:.7}.c1{top:24px;left:25px}.c2{top:24px;right:25px;transform:scaleX(-1)}.c3{bottom:25px;left:25px;transform:rotate(180deg)}.c4{bottom:25px;right:25px;transform:rotate(180deg) scaleX(-1)}
+.hero-inner{max-width:390px;width:100%}.eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--sage);margin:18px 0}
+h1,h2,.script{font-family:"Great Vibes",cursive;font-weight:400}.hero h1{font-size:clamp(48px,13vw,76px);line-height:1.03;color:var(--sage-dark);margin:12px 0}.amp{font:italic 26px "Cormorant Garamond",serif;color:var(--gold);margin:4px}
+.ornament{color:var(--gold);letter-spacing:8px;margin:16px 0}.intro{font:20px "Cormorant Garamond",serif;line-height:1.55;margin:20px auto;max-width:320px}
+.couple{width:210px;height:190px;margin:20px auto 8px;position:relative}
+.arch{position:absolute;bottom:0;left:20px;right:20px;height:175px;border:2px solid var(--gold);border-bottom:0;border-radius:110px 110px 0 0;background:linear-gradient(#dce4d3aa,#f5f0e3aa)}
+.person{position:absolute;bottom:0;width:75px;height:126px}.person .head{position:absolute;top:0;left:23px;width:30px;height:34px;border-radius:50%;background:#b98565;border:3px solid #4a382e}
+.person .body{position:absolute;bottom:0;left:4px;width:68px;height:96px;border-radius:35px 35px 5px 5px;background:#53674d;clip-path:polygon(25% 0,75% 0,100% 100%,0 100%)}
+.person.groom{left:48px}.person.bride{right:42px}.person.bride .body{background:#9d655d;clip-path:polygon(35% 0,65% 0,100% 100%,0 100%)}.person.bride:after{content:"";position:absolute;top:-5px;left:14px;width:48px;height:125px;border-radius:50% 50% 15% 15%;background:#8b554e;opacity:.9;z-index:-1}
+.leaf{position:absolute;color:var(--sage);font-size:30px}.leaf.l1{left:0;top:45px}.leaf.l2{right:0;top:65px;transform:scaleX(-1)}
+.open-btn,.primary{border:1px solid var(--gold);background:var(--sage-dark);color:#fff8e9;border-radius:999px;padding:15px 27px;letter-spacing:1.5px;font-size:11px;text-transform:uppercase;box-shadow:0 7px 20px #34453622}
+section{padding:60px 28px;text-align:center;position:relative}.section-kicker{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--sage);margin-bottom:12px}h2{font-size:48px;line-height:1.05;color:var(--sage-dark);margin:8px 0 18px}.serif{font:20px "Cormorant Garamond",serif;line-height:1.55}.divider{color:var(--gold);letter-spacing:8px;margin:20px 0}
+.names{background:#e5e8dc}.parents{font:17px "Cormorant Garamond",serif;line-height:1.7}.date-card{background:var(--sage-dark);color:#f8f1df;border-radius:180px 180px 12px 12px;padding:36px 20px 30px;margin:28px 0 0;border:1px solid var(--gold);outline:1px solid #b99a5b66;outline-offset:6px}.date-card .day{font:58px "Cormorant Garamond",serif;color:#e4cf98}.date-card .month{letter-spacing:4px;font-size:13px}.date-card .year{font:22px "Cormorant Garamond",serif;margin-top:8px}
+.scratch-wrap{background:#e1e5d8}.scratch-box{position:relative;max-width:340px;height:220px;margin:25px auto 10px;border-radius:16px;overflow:hidden;border:1px solid var(--gold);background:#fbf7ea;box-shadow:0 8px 25px #34453618}
+.reveal{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:15px}.reveal strong{font:38px "Great Vibes",cursive;color:var(--sage-dark)}.reveal span{font:18px "Cormorant Garamond",serif;margin-top:8px}
+#scratch{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.hint{font-size:11px;letter-spacing:1px;color:#66765d}
+.events{background:#f8f4e9}.event{border:1px solid #c6b17d;border-radius:14px;padding:20px;margin:14px 0;background:#fffdf6}.event h3{font:28px "Cormorant Garamond",serif;margin:0 0 6px;color:var(--sage-dark)}.event p{margin:5px;font-size:12px;letter-spacing:1px}
+.location{background:#dfe5d7}.mapbtn{display:inline-block;text-decoration:none;margin-top:15px}
+.rsvp{background:var(--sage-dark);color:#f7f0df}.rsvp h2{color:#e6d5a7}.rsvp p{font:18px "Cormorant Garamond",serif;line-height:1.5}.footer{padding:32px;text-align:center;background:#29382c;color:#e5d5a5;font:34px "Great Vibes",cursive}
+.music{position:fixed;right:14px;bottom:18px;z-index:9;border:1px solid var(--gold);background:var(--sage-dark);color:#fff;border-radius:50%;width:48px;height:48px;font-size:20px;box-shadow:0 4px 15px #0003}
+#player{display:none}
+@media(min-width:700px){.site{margin:25px auto;border-radius:18px}.hero{min-height:850px}}
+</style>
+</head>
+<body>
+<div class="site">
+<header class="hero" id="top">
+ <span class="corner c1">❧</span><span class="corner c2">❧</span><span class="corner c3">❧</span><span class="corner c4">❧</span>
+ <div class="hero-inner">
+  <div class="eyebrow">Together with our families</div>
+  <div class="ornament">✦ ❦ ✦</div>
+  <p class="intro">Joyfully invite you to celebrate the wedding of</p>
+  <h1>Vikas Shivani</h1><div class="amp">&</div><h1>Varsha</h1>
+  <div class="couple" aria-label="Illustration of a wedding couple">
+   <div class="arch"></div><span class="leaf l1">❧</span><span class="leaf l2">❧</span>
+   <div class="person groom"><div class="head"></div><div class="body"></div></div>
+   <div class="person bride"><div class="head"></div><div class="body"></div></div>
+  </div>
+  <div class="eyebrow">A beautiful beginning</div>
+  <button class="open-btn" onclick="document.querySelector('#invitation').scrollIntoView({behavior:'smooth'})">Open Invitation ↓</button>
+ </div>
+</header>
+<section class="names" id="invitation">
+ <div class="section-kicker">With the blessings of our families</div>
+ <h2>We're getting married</h2><div class="divider">— ♥ —</div>
+ <div class="parents"><b>Vikas Shivani</b><br>Son of Piyaro Shivani</div>
+ <div class="amp">&</div>
+ <div class="parents"><b>Varsha</b><br>Daughter of Harji Amrani</div>
+ <p class="serif" style="margin-top:28px">Request the pleasure of your gracious presence<br>at our wedding celebration.</p>
+</section>
+<section>
+ <div class="section-kicker">Save the date</div><h2>Our Wedding Day</h2>
+ <div class="date-card"><div class="month">FRIDAY</div><div class="day">20</div><div class="month">NOVEMBER</div><div class="year">2026</div><div class="divider">✦ ❦ ✦</div><div style="font-size:12px;letter-spacing:2px">BARAAT · 6:00 AM</div></div>
+ <p class="serif" style="margin-top:30px">A day filled with love, blessings<br>and a lifetime of togetherness.</p>
+</section>
+<section class="scratch-wrap">
+ <div class="section-kicker">A little surprise for you</div><h2>Scratch to Reveal</h2>
+ <p class="serif">Gently rub the card below with your finger<br>to reveal our special date.</p>
+ <div class="scratch-box"><div class="reveal"><strong>Our Wedding Day</strong><span>20 November 2026</span><span>Vikas & Varsha</span></div><canvas id="scratch"></canvas></div>
+ <p class="hint">USE YOUR FINGER TO SCRATCH THE CARD</p>
+</section>
+<section class="events">
+ <div class="section-kicker">The celebration</div><h2>Wedding Details</h2>
+ <div class="event"><h3>Baraat</h3><p>FRIDAY · 20 NOVEMBER 2026</p><p>6:00 AM</p></div>
+ <div class="event"><h3>Wedding Celebration</h3><p>Join us as we begin our forever.</p><p>Details to be announced</p></div>
+</section>
+<section class="location">
+ <div class="section-kicker">Join us</div><h2>Meet us in Mithi</h2>
+ <p class="serif">Mithi, Sindh, Pakistan</p>
+ <p class="serif" style="font-size:16px">We look forward to celebrating this special day with you.</p>
+ <a class="primary mapbtn" href="https://www.google.com/maps/search/?api=1&query=Mithi%2C+Sindh%2C+Pakistan" target="_blank" rel="noopener">View Location on Maps ↗</a>
+</section>
+<section class="rsvp">
+ <div class="section-kicker" style="color:#d6c18c">With love</div><h2>Join Our Celebration</h2>
+ <p>Your presence and blessings will make<br>our day even more special.</p>
+ <p style="font-size:14px;letter-spacing:2px">VIKAS & VARSHA</p>
+ <button class="open-btn" onclick="window.location.href='https://wa.me/?text='+encodeURIComponent('We are delighted to invite you to the wedding of Vikas Shivani & Varsha on 20 November 2026 in Mithi. Baraat: 6:00 AM.')">Share Invitation on WhatsApp</button>
+</section>
+<footer class="footer">Two hearts, one beautiful journey ♥</footer>
+</div>
+<button class="music" id="musicBtn" aria-label="Toggle instrumental music" title="Music on/off">♫</button>
+<audio id="player" loop preload="none"></audio>
+<script>
+const canvas=document.getElementById('scratch'),ctx=canvas.getContext('2d');
+function setupScratch(){
+ const box=canvas.getBoundingClientRect(),dpr=window.devicePixelRatio||1;
+ canvas.width=box.width*dpr;canvas.height=box.height*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+ ctx.globalCompositeOperation='source-over';
+ const grad=ctx.createLinearGradient(0,0,box.width,box.height);
+ grad.addColorStop(0,'#9ca98c');grad.addColorStop(.5,'#d6d7c4');grad.addColorStop(1,'#8b9a7b');
+ ctx.fillStyle=grad;ctx.fillRect(0,0,box.width,box.height);
+ ctx.strokeStyle='#f7f0df';ctx.lineWidth=2;
+ for(let i=0;i<7;i++){ctx.beginPath();ctx.moveTo(0,i*38);ctx.quadraticCurveTo(box.width/2,i*38+18,box.width,(i*38));ctx.stroke()}
+ ctx.fillStyle='#344536';ctx.font='12px Montserrat';ctx.textAlign='center';ctx.fillText('SCRATCH HERE ✦',box.width/2,box.height/2);
+ ctx.globalCompositeOperation='destination-out';
+}
+let scratching=false;
+function point(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+canvas.addEventListener('pointerdown',e=>{scratching=true;canvas.setPointerCapture(e.pointerId);const p=point(e);ctx.beginPath();ctx.arc(p.x,p.y,22,0,Math.PI*2);ctx.fill()});
+canvas.addEventListener('pointermove',e=>{if(!scratching)return;const p=point(e);ctx.beginPath();ctx.arc(p.x,p.y,24,0,Math.PI*2);ctx.fill()});
+canvas.addEventListener('pointerup',()=>scratching=false);canvas.addEventListener('pointercancel',()=>scratching=false);
+setupScratch();window.addEventListener('resize',setupScratch);
+// Browser blocks unsolicited audio; button is a clear user gesture. Add your licensed instrumental audio file as wedding-music.mp3.
+const audio=document.getElementById('player'),musicBtn=document.getElementById('musicBtn');
+audio.src='wedding-music.mp3';musicBtn.addEventListener('click',async()=>{if(audio.paused){try{await audio.play();musicBtn.textContent='Ⅱ'}catch(e){alert('Add your licensed wedding-music.mp3 file beside index.html, then tap music again.')}}else{audio.pause();musicBtn.textContent='♫'}});
+</script>
+</body>
+</html>
